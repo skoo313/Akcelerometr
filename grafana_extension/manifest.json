@@ -1,0 +1,18 @@
+{ 
+  "manifest_version": 2,
+  "name": "grafana_extension",
+    "version": "1", 
+
+    "permissions": [
+    
+         "http://localhost/*"
+    ],
+
+    "content_scripts": [ 
+        { 
+            "js": [ "grafana_extension.js" ],
+             "matches": ["*://*.localhost/*"]
+         }
+     ] 
+}   
+
